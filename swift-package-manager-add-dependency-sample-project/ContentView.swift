@@ -1,4 +1,5 @@
 import SwiftUI
+import ParentPackage
 
 struct ContentView: View {
     var body: some View {
@@ -6,7 +7,8 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text(ParentPackageEnum.value)
+
         }
         .padding()
     }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C18A3C12C312BE500E7B053 /* ParentPackage in Resources */ = {isa = PBXBuildFile; fileRef = 1C18A3BF2C312BE500E7B053 /* ParentPackage */; };
+		1C18A3C22C312BE500E7B053 /* ChildPackage in Resources */ = {isa = PBXBuildFile; fileRef = 1C18A3BE2C312BE500E7B053 /* ChildPackage */; };
 		1C839C472C3127F900F3F3D7 /* swift_package_manager_add_dependency_sample_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C839C462C3127F900F3F3D7 /* swift_package_manager_add_dependency_sample_projectApp.swift */; };
 		1C839C492C3127F900F3F3D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C839C482C3127F900F3F3D7 /* ContentView.swift */; };
 		1C839C4B2C3127FA00F3F3D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C839C4A2C3127FA00F3F3D7 /* Assets.xcassets */; };
@@ -14,6 +16,7 @@
 		1C839C592C3127FA00F3F3D7 /* swift_package_manager_add_dependency_sample_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C839C582C3127FA00F3F3D7 /* swift_package_manager_add_dependency_sample_projectTests.swift */; };
 		1C839C632C3127FA00F3F3D7 /* swift_package_manager_add_dependency_sample_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C839C622C3127FA00F3F3D7 /* swift_package_manager_add_dependency_sample_projectUITests.swift */; };
 		1C839C652C3127FA00F3F3D7 /* swift_package_manager_add_dependency_sample_projectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C839C642C3127FA00F3F3D7 /* swift_package_manager_add_dependency_sample_projectUITestsLaunchTests.swift */; };
+		1CE0973A2C312C2300844E27 /* ParentPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE097392C312C2300844E27 /* ParentPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C18A3BE2C312BE500E7B053 /* ChildPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ChildPackage; sourceTree = "<group>"; };
+		1C18A3BF2C312BE500E7B053 /* ParentPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ParentPackage; sourceTree = "<group>"; };
 		1C839C432C3127F900F3F3D7 /* swift-package-manager-add-dependency-sample-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-package-manager-add-dependency-sample-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C839C462C3127F900F3F3D7 /* swift_package_manager_add_dependency_sample_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_package_manager_add_dependency_sample_projectApp.swift; sourceTree = "<group>"; };
 		1C839C482C3127F900F3F3D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE0973A2C312C2300844E27 /* ParentPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C18A3C02C312BE500E7B053 /* LocalPackages */ = {
+			isa = PBXGroup;
+			children = (
+				1C18A3BE2C312BE500E7B053 /* ChildPackage */,
+				1C18A3BF2C312BE500E7B053 /* ParentPackage */,
+			);
+			path = LocalPackages;
+			sourceTree = "<group>";
+		};
 		1C839C3A2C3127F900F3F3D7 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +94,7 @@
 				1C839C572C3127FA00F3F3D7 /* swift-package-manager-add-dependency-sample-projectTests */,
 				1C839C612C3127FA00F3F3D7 /* swift-package-manager-add-dependency-sample-projectUITests */,
 				1C839C442C3127F900F3F3D7 /* Products */,
+				1CE097382C312C2300844E27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +116,7 @@
 				1C839C4A2C3127FA00F3F3D7 /* Assets.xcassets */,
 				1C839C4C2C3127FA00F3F3D7 /* swift_package_manager_add_dependency_sample_project.entitlements */,
 				1C839C4D2C3127FA00F3F3D7 /* Preview Content */,
+				1C18A3C02C312BE500E7B053 /* LocalPackages */,
 			);
 			path = "swift-package-manager-add-dependency-sample-project";
 			sourceTree = "<group>";
@@ -129,6 +146,13 @@
 			path = "swift-package-manager-add-dependency-sample-projectUITests";
 			sourceTree = "<group>";
 		};
+		1CE097382C312C2300844E27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +169,9 @@
 			dependencies = (
 			);
 			name = "swift-package-manager-add-dependency-sample-project";
+			packageProductDependencies = (
+				1CE097392C312C2300844E27 /* ParentPackage */,
+			);
 			productName = "swift-package-manager-add-dependency-sample-project";
 			productReference = 1C839C432C3127F900F3F3D7 /* swift-package-manager-add-dependency-sample-project.app */;
 			productType = "com.apple.product-type.application";
@@ -235,6 +262,8 @@
 			files = (
 				1C839C4F2C3127FA00F3F3D7 /* Preview Assets.xcassets in Resources */,
 				1C839C4B2C3127FA00F3F3D7 /* Assets.xcassets in Resources */,
+				1C18A3C12C312BE500E7B053 /* ParentPackage in Resources */,
+				1C18A3C22C312BE500E7B053 /* ChildPackage in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,6 +640,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1CE097392C312C2300844E27 /* ParentPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ParentPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1C839C3B2C3127F900F3F3D7 /* Project object */;
 }
