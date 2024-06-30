@@ -34,8 +34,7 @@ The swift code generated should be
 
 ## Actual behavior
 
-
-
+Forces user to selectiona additional options, then adds those options to the end of `.package(path:)`    
 
 ```swift
     dependencies: [
@@ -43,7 +42,7 @@ The swift code generated should be
     ],
 ```
 
-which is not valid
+this breaks the `Package.swift` file
 
 ---
 
